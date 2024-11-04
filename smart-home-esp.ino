@@ -13,6 +13,8 @@
 
 #define DHTTYPE DHT22
 
+// praha izba pin 15
+// praha vonku 23
 uint8_t DHTPin = 15;
 DHT dht(DHTPin, DHTTYPE);
 
@@ -22,7 +24,7 @@ float temperature;
 float humidity;
 
 unsigned long lastTime = 0;
-// 15 m
+// 15 m = 900000
 unsigned long timerDelay = 900000;
 
 void connectToWiFi() {
